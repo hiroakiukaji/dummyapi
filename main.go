@@ -17,7 +17,7 @@ func main() {
 
 	// Routing
 	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello, World!")
+		return c.String(http.StatusOK, "Hello, World!!!")
 	})
 	e.GET("/square/:root", func(c echo.Context) error {
 		root, _ := strconv.Atoi(c.Param("root"))
